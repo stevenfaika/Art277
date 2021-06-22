@@ -3,72 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 4</title>
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lemme Help</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: rgb(229, 241, 241);
+            font-size: 18px;
+            letter-spacing: normal;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        container{
+            width: 80%;
+            margin: auto;
+        }
+
+        h1{
+            font-size: 3rem;
+            color: rgb(2, 2, 31);
+            text-transform: uppercase;
+            font-weight: 300;
+            margin-bottom: 0;
+        }
+        nav{
+            background-color: rgb(2, 2, 31);
+            height: 4rem;
+            color: #fff;
+        }
+        nav a{
+            color: #fff;
+            text-decoration: none;
+            padding: 2em;
+        }
+        nav a:hover{
+            background-color: rgb(1, 1, 8);
+        }
+        .banner{
+            width: 100%;
+        }
+        .section_two{
+             margin-bottom: 8rem;
+        }
+        .section_two img{
+            width: 250px;
+            height: 179px;
+            float: right;
+        }
+        .footer{
+             background-color: rgb(2, 2, 31);
+             height: 5rem;
+             color: white;
+            padding: 3px;
+        }
+
+    </style>
 </head>
 <body>
-    <div style="width: 80%; margin: auto; font-size: 19px;">
-        <picture>
-            <source srcset="bird.jpg" media="min-width: 650px">
-            <img src="bird.JPG" alt="bird" style="width: 100%; height: 600px" />
-        </picture>
-        <H1>Traveling in Depression</H1>
-        <p>When I was very little, I caught the travel bug. it started after my 
-         grandparents first  brought me to their home in frence and i have now 
-         been to  twenty-nine different countries.Each has given me a u unique 
-         learning experience.
-         <br /><br />
-         At five, I marveled at the Eiffel Town in the city 
-         of lights. When I saw eight, I stood in the heart of Piazza San Marco
-         feeding hordes of pigeons, the glided down venetian waterway on sleek
-         gondoles. At thirteen, I saw the ancient megalithic structure of 
-         stonehenge and walked along the great wall of china, amazed that the 
-         thousand-year-old stone were still in place.
-         <br /><br /> 
-         It was through exploring cultures around the world that I first brcame
-         interested in language.
-
-         <img
-          src="girl.JPG" 
-         alt="Black Girl"
-         style="width: 30%; height: 300px; float: left; margin-right: 10px;"
-          />
-         <br /><br />
-         It began with frence, which taught me the importance of pronunciation. I
-         remember once asking a store owner in paris where Rus des Pyramides was.
-         But when I pronounced it PYR-a-mides instead of pyr-A-mides, with more
-         accent on the A, she looked at me  bewildered.
-         <br /><br /> 
-         In the eight grade, I became fascinated with spanish and awareof its 
-         similarities with English through congnates. baseball in spanish, for
-         exmple, is beisbol which looks different but sound nearly the same 
-         this was incredible to me as it made speech and comprehesion more 
-         fluid, and even today i find that congnates come to the rescue when I 
-         forget how to say something in spanish.
-         <br /><br />
-         Then, in high school, I developed an enthusiasm for chinese. As I
-         student chinese at my school, I marveled how if just one stroke was 
-         missing from a character, the meaning is lost. I loved how long words
-         were formed by combining simple characters, so huo( ) meaning fire
-         and shan ( ) meaning mountain can be joined to create huoshan (  ),
-         which mean volcano. I love spending hours at a time practicing the 
-         characters and I can feel the beauty and rhythm as I from them
-        </p>
-
-        <h1>Image Map</h1>
-        <img src="map.JPG" alt="computer on deck" width="100%" usemap="#map" />
-        <map name="map">
-        <area shape="poly"
-         coords="673,623,86,636,239,751,906,733,1210,176,947,131" 
-         href="https://www.youtube.com"
-         alt="compuet"
-         />
-         <area 
-         shape="rect"
-         coords="536,432,533,606,629,619,771,441,629,447"
-         href="https://www.youtube.com" 
-         alt="coomputer">
-        </map>
+    <div class="container">
+        <h1>Lemme Help</h1>
+        <nav>
+            <a href="#">Home</a> | <a href="#">About Us</a> |
+            <a href="#">Prevention</a> |
+            <a href="#">Email Us</a>
+        </nav>
+        <img class="banner" src="banner.JPG" alt="girlS">
+        <div class="section_one">
+           <h2>What is Lemme Help</h2>
+          <p>
+           Helping hands is a non-profit organization dedicated to serving those 
+           most at-risk to COVID-19: senior citizens, the immune compromised, and 
+           people with pre-exisiting medical condition whichput them at 
+           additional risk. our community volunteers and delivery partners 
+           deliver grocerises, medicine. and other necessary supplies to empower 
+           everyone to stay healthy and be a responisble as they can be.
+           <br /><br />
+           <a href="#">Read our blog</a>
+        </p> 
+        </div>
+        <div class="section_two">
+           <h2>How we Help</h2>
+           <p>Helping Hands Community connects who must shelter in place with our 
+           volunteers and delivery partners so grocerises, medication and essential
+           supplies get delivered safely. our technology platform make community
+           volunteerism easy and reliable while providing an intuitive solution for 
+           partners to scale thier own impact.<br />
+           <br />
+           <img src="nurse.JPG" alt="nurse"> 
+           our partner solutions allow organization to fulfill custom and batch requests
+           at scale through the Helping Hand Community platform, while we connect
+           individuals who neeed help and can offer through our 
+           website.
+         </p>
+         </div>
+         <div class="footer">
+              <p>copyright@lemmehelp.com | All Rights Reserved</p>
+     </div>
     </div>
 </body>
 </html>
