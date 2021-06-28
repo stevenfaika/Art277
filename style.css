@@ -1,0 +1,520 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* navigation */
+.header{
+    background-color: white;
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.1) ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+
+
+.header ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: white;
+}
+
+.header ul a{
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background .2s ease-in-out;
+    color: black;
+}
+
+.header ul a:hover{
+    background-color: gray;
+    z-index: 4;
+    border-radius: 10px;
+
+}
+
+.header .logo{
+    float: left;
+    display: block;
+    padding: 20px 20px;
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+}
+
+.header .menu{
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
+.header .menu-icon{
+    padding: 28px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+.header .menu-icon .nav-icon{
+    background-color: black;
+    display: block;
+    width: 22px;
+    height: 3px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+
+.header .menu-icon .nav-icon::before{
+    content: "";
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    top: 5px;
+    transition: all .2s ease-in-out;
+}
+.header .menu-icon .nav-icon::after{
+    content: "";
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    top: -5px;
+    transition: all .2s ease-out;
+}
+
+.menu-btn{
+    display: none;
+}
+
+.header .menu-btn:checked ~ .menu{
+    max-height:360px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon{
+    background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon::before{
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon::after{
+    transform: rotate(45deg);
+    top: 0;
+}
+
+
+/* home page background */
+.home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.95)), url(ImgFolder/work1.jpeg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.home{
+    position: relative;
+}
+
+.home h1{
+    position: absolute;
+    left: 25%;
+    color: white;
+    z-index: 4;
+    font-size: 32px;
+
+} 
+
+/* about section */
+.about-container{
+    position: relative;
+    height: 41.6em;
+    width: 90%;
+    left: 5%;
+    right: 5%;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+.about-title{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+.about-image img{
+    height: 300px;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.name h1{
+    padding: 0 30px;
+    font-size: 24px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.name h3{
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+    font-size: 16px;
+    font-family: cursive;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.about-content{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    padding: 0 30px;
+}
+/* achievement and skills segment */
+
+.achievements-skills-container{
+    position: relative;
+
+}
+
+.achievement-container{
+    position: relative;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height: 15em;
+    margin-top: 120px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+.achievements{
+    padding: 0 30px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.achievements p{
+    padding-top: 20px;
+    align-items: center;
+}
+
+.achievements h1{
+    font-size: 1.5em;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.skills-container{
+    position: relative;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height: 240px;
+    margin-top: 120px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+.skills{
+    text-align: center;
+    margin-top: 70px;
+    font-size: 14px;
+    padding: 0 30px;
+}
+ 
+
+.skills h1{
+    font-size: 1.5em;
+    padding-top: 40px;
+}
+
+.skills p{
+    padding-top: 20px;
+}
+
+/* footer */
+
+.footer-container{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+    background-color: rgb(32, 32, 32);
+}
+
+.footer-content{
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}
+
+.footer-content i{
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.footer-content h1{
+    font-size: 18px;
+    padding-top: 10px;
+    color: crimson;
+}
+
+.footer-content p{
+    font-size: 10px;
+    
+}
+
+.footer-content .personal-data h1{
+    font-size: 20px;
+}
+
+.footer-content button{
+    background-color: rgb(0, 0, 47);
+    border: none;
+    border-radius: 10px;
+    margin-top: 0;
+}
+
+.footer-content button a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;
+}
+
+.footer-copyright{
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    color: white;
+}
+
+.footer-copyright p{
+    text-align: center;
+    font-size: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query */
+
+@media(min-width: 900px){
+    .header li{
+        float: left;
+    }
+
+    .header li a{
+        padding: 20px 25px;
+    }
+
+    .header .logo{
+        font-size: 32px;
+    }
+
+    .header .menu{
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .header .menu-icon{
+        display: none;
+    }
+
+    .header ul a{
+        transition: transform .3s ease-in-out;
+    }
+    .header ul a:hover{
+        transform: rotate(6deg);
+        color: crimson;
+        background: transparent;
+    }
+
+    .home h1{
+        font-size: 50px;
+        color: yellow;
+    }
+
+    .home::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.95)), url(ImgFolder/work.jpeg); 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        z-index: -1; 
+    }
+    
+    .header ul a{
+        padding: 20px;
+        font-size: 22px;
+    }
+
+    
+    .about-container{
+        height: 60em;
+        
+    }
+
+    .about-title{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 65px;
+        padding-top: 40px;
+        font-size: 20px;
+    }
+
+    .about-image img{
+        height: 400px;
+        width: 300px;
+        margin-top: 20px;
+        border-radius: 50%;
+    }
+
+    .name h1{
+        font-size: 30px;
+        margin-top: 40px;
+    }
+    
+    .name h3{
+        margin-top: 25px;
+        font-size: 22px;
+    }
+
+    .about-content{
+        margin-top: 50px;
+        font-size: 22px;
+    }
+
+    .achievement-container{
+        height: 35em;
+    }
+
+    .achievements{
+        font-size: 22px;
+    }
+    
+    .achievements h1{
+        font-size: 30px;
+    }
+
+    .skills-container{
+        height: 300px;
+    }
+
+    .skills{
+        margin-top: 70px;
+        font-size: 22px;
+    }
+     
+    
+    .skills h1{
+        font-size: 30px;
+    }
+    
+    .footer-container{
+        height: 700px;
+        margin-top: 150px;
+    }
+    
+    .footer-content i{
+        font-size: 22px;
+        padding-top: 5px;
+    }
+    
+    .footer-content h1{
+        font-size: 30px;
+        padding-top: 10px;
+        color: crimson;
+    }
+    
+    .footer-content p{
+        font-size: 22px;
+        
+    }
+    
+    .footer-content .personal-data h1{
+        font-size: 26px;
+    }
+    
+    .footer-content button{
+        padding: 15px;
+        margin-top: 0px;
+        font-size: 18px;
+    }
+    
+    .footer-content button a{
+    
+        text-decoration: none;
+        color: white;
+        padding: 10px 10px;
+    }
+    
+    .footer-copyright{
+        height: 120px;
+    }
+    
+    .footer-copyright p{
+        text-align: center;
+        font-size: 16px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+
+    
+}
+
+.sucess{width: 50%;
+height: 300px;}
+
+.site{width: 50%;
+    height: 300px;}
